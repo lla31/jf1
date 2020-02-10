@@ -62,7 +62,6 @@
           }*/
         pagesize: 4,
         currentPage: 1,
-        id: 1
       }
     },
     mounted: function () {
@@ -110,7 +109,8 @@
       },
 
       goCourseDetailPage(item) {
-        this.$router.push({name:"CourseDetailPage",params:{id: item.id}})
+        //let id = this.item.id;
+        this.$router.push('/CourseDetailPage/' + item.id)
       }
 
     }

@@ -71,7 +71,7 @@ export default new Router({
     },
 
     {
-      path: '/coursedetailpage',
+      path: '/coursedetailpage/:id',
       name: 'CourseDetailPage',
       component: CourseDetailPage
     },
